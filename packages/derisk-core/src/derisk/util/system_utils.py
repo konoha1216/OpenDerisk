@@ -206,7 +206,7 @@ def get_cpu_info():
             pass
     elif os_type == OSType.WINDOWS:
         try:
-            output = subprocess.check_output("wmic cpu get Name", shell=True).decode(
+            output = subprocess.check_output("wmic cpu get Name", shell=False).decode(
                 "utf-8"
             )
             lines = output.splitlines()
