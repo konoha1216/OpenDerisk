@@ -27,19 +27,19 @@ persist_path = "pilot/data"
 [[models.llms]]
 name = "deepseek-r1"
 provider = "proxy/deepseek"
-api_key = "${env:DEEPSEEK_API_KEY}"
+api_key = "sk-3ece802447644bde829627dbbee2ed9e"
 backend = "deepseek-reasoner"
 reasoning_model = "True"
 
 [[models.llms]]
 name = "deepseek-v3"
 provider = "proxy/deepseek"
-api_key = "${env:DEEPSEEK_API_KEY}"
+api_key = "sk-3ece802447644bde829627dbbee2ed9e"
 backend = "deepseek-chat"
 
 [[models.embeddings]]
 name = "BAAI/bge-large-zh-v1.5"
 provider = "proxy/openai"
 api_url = "https://api.siliconflow.cn/v1/embeddings"
-api_key = "${env:SILICONFLOW_API_KEY}"
+api_key = "sk-xenexmvjddoshoskwhaucnyfejcehduhoardaxhadawnufai"
 
